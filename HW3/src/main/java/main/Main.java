@@ -1,13 +1,10 @@
 package main;
 
-import java.util.AbstractMap;
-import java.util.Objects;
-import java.util.Scanner;
-import java.util.TreeMap;
+import java.util.*;
 
 public class Main {
 
-  private static AbstractMap<String, String> createListFromUser() {
+  private static Map<String, String> createListFromUser() {
     int n;
     TreeMap<String, String> map = new TreeMap<>();
 
@@ -35,7 +32,7 @@ public class Main {
     return map;
   }
 
-  private static void findFamilyByCity(AbstractMap<String, String> map) {
+  private static void findFamilyByCity(Map<String, String> map) {
     Scanner scanner = new Scanner(System.in);
     System.out.print("Enter city:");
     String city = scanner.nextLine();
@@ -46,7 +43,7 @@ public class Main {
   }
 
   public static void main(String[] args) {
-    AbstractMap<String, String> map = createListFromUser();
+    Map<String, String> map = createListFromUser();
     findFamilyByCity(map);
   }
 }
