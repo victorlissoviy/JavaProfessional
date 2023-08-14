@@ -1,0 +1,7 @@
+rootProject.name = 'JavaProfessional'
+include 'HW1'
+include 'HW3'
+include 'HW2'
+include 'Server'
+include 'Client'
+
